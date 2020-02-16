@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Bright Idea Documentation</title>
+
+<!--CSS -->
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/css/min.css">
+
+
+<!--scripts -->
+<script src="../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+
+<!--Font -->
+<link href="../assets/fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+
+
+<!-- Code Beautifuly-->
+<link rel="stylesheet" href="../assets/css/tomorrow-night.css">
+<script src="../assets/js/highlight.pack.js"></script>
+<script src="../assets/js/lines.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad({
+    singleLine: true,
+    
+});
+</script>
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="header"><nav class="navbar navbar-expand-lg navbar-light fixed-top top-nav">
+  <a class="navbar-brand" href="..">
+    <img src="../assets/images/logoalfa2.png" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+    <span class="our-button">
+      <span class="the-bar"></span>
+      <span class="the-bar"></span>
+      <span class="the-bar"></span>
+    </span>
+
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <div class="main-menu-left">
+  
+                                                <li class="nav-item active">
+        <a class="nav-link" href="../whatsapp ">whatsapp  <span class="sr-only">((current)</span></a>
+      </li>
+        
+    </div>
+  
+  
+  </ul>
+  
+  
+    <form class="form-inline ">
+    </form>
+  </div>
+</nav></div>
+        <div class="products"><nav class="main-menu">
+
+    <ul class="nav nav-tabs">
+                                        
+        <li>
+            <a class="nav-link active" href="../whatsapp">
+                <i class="fab fa-whatsapp fa-2x"></i>
+                <span class="nav-text">WhatsApp </span>
+            </a>
+        </li>
+
+            </ul>
+
+
+</nav></div>
+        <div class="TOC"><div class="nav-side-menu">
+    <div class="menu-content-mobile">Menu Content <i class="fas fa-angle-down"></i></div>
+    <nav id="navbar-example3" class="navbar navbar-light bg-light">
+      <div class="navbar-brand">WhatsApp </div>
+      <nav class="nav nav-pills flex-column">
+                <div data-toggle="collapse" data-target="#Introduction" class="collapsed">
+                                                  <a class="nav-link" href="#Introduction">Introduction<i class="fas fa-angle-down"></i></a>
+        </div>
+        <div class="collapse" id="Introduction">
+          <nav class="nav  flex-column">
+                        <a class="nav-link ml-3 my-1" href="#About-the-Service">About the Service</a>
+                      </nav>
+        </div>
+                <div data-toggle="collapse" data-target="#Authentication" class="collapsed">
+                                                  <a class="nav-link" href="#Authentication">Authentication<i class="fas fa-angle-down"></i></a>
+        </div>
+        <div class="collapse" id="Authentication">
+          <nav class="nav  flex-column">
+                        <a class="nav-link ml-3 my-1" href="#BearerAuth">BearerAuth</a>
+                        <a class="nav-link ml-3 my-1" href="#Base-URL">Base URL</a>
+                      </nav>
+        </div>
+                <div data-toggle="collapse" data-target="#Opt-In-and-Outs" class="collapsed">
+                                                  <a class="nav-link" href="#Opt-In-and-Outs">Opt-In-and-Outs<i class="fas fa-angle-down"></i></a>
+        </div>
+        <div class="collapse" id="Opt-In-and-Outs">
+          <nav class="nav  flex-column">
+                        <a class="nav-link ml-3 my-1" href="#Opt-In">Opt-In</a>
+                        <a class="nav-link ml-3 my-1" href="#Opt-Out">Opt-Out</a>
+                      </nav>
+        </div>
+                <div data-toggle="collapse" data-target="#Message" class="collapsed">
+                                                  <a class="nav-link" href="#Message">Message<i class="fas fa-angle-down"></i></a>
+        </div>
+        <div class="collapse" id="Message">
+          <nav class="nav  flex-column">
+                        <a class="nav-link ml-3 my-1" href="#Authorizations">Authorizations</a>
+                        <a class="nav-link ml-3 my-1" href="#WhatsApp-Message-flow">WhatsApp Message flow</a>
+                        <a class="nav-link ml-3 my-1" href="#Supported-Content-Types">Supported Content-Types</a>
+                        <a class="nav-link ml-3 my-1" href="#Send-a-WhatsApp-Message">Send a WhatsApp Message</a>
+                        <a class="nav-link ml-3 my-1" href="#Messages-Types">Messages Types</a>
+                        <a class="nav-link ml-3 my-1" href="#Call-Back">Call Back</a>
+                        <a class="nav-link ml-3 my-1" href="#Notification">Notification</a>
+                      </nav>
+        </div>
+          
+      </nav>
+    </nav>
+  </div></div>
+        <div class="Body"><div class="col">
+    <div class="w-body">
+        <div class="section" id="item-1">
+            <div class="container-fluid">
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <div id="articales" class="section" id="item-2">
+                        <!--Artical Strat here-->
+                        <h1 style="display: none;" id="Introduction">Introduction</h1>
+<h2 id="About-the-Service">About the Service</h2>
+<p>The brightidea WhatsApp Business API provides a rich, enterprise grade messaging solution for clients who wish to communicate with their customers via WhatsApp.</p>
+<p>WhatsApp is the most popular communication and chatting app for the past few years.
+With its rich features, it can be a powerful platform for business owners to communicate with their clients.
+Therefore, WhatsApp for Business API has been introduced as a business version of WhatsApp.</p>
+<p>Introducing WhatsApp for Business API as a communication channel between business owners and their customers.</p>
+<ol>
+<li>Communicate with 1.5B Global Users</li>
+<li>Instant communication to increase your customer’s satisfaction with less expenses</li>
+<li>Rich Media Content </li>
+<li>Ability to share live Locations and messages</li>
+</ol>
+<p>We simply shape the future of Business Communications …</p>
+<h1 style="display: none;" id="Authentication">Authentication</h1>
+<p>To be able to authenticate brightidea WhatsApp Business API the access token needs to be passed.</p>
+<h2 id="BearerAuth">BearerAuth</h2>
+<p><code>Authorization: Bearer 8d18d2f9045b7145ff81***********</code></p>
+<h2 id="Base-URL">Base URL</h2>
+<p>Currently all WhatsApp URLs referenced in the WhatsApp documentation has the base URL:</p>
+<p><code>https://www.brightidea.mobi/wa/v1/</code></p>
+<h1 style="display: none;" id="Opt-In-and-Outs">Opt-In-and-Outs</h1>
+<p>All Business initiated conversations via the brightidea WhatsApp Business API must start with an “Opt-In” by the user. This can be collected through any third party. For example in an SMS message, In-Line with a Web Form, in an Email, or even via a deep-link in print media.</p>
+<p>You can record a opt-in by the API call described below and once the “Opt-In” is recorded you’ll be able to message that customer via the brightidea WhatsApp Business API.</p>
+<p>Businesses must provide a method by which customers may opt-out of receiving future messages from your organisation. The opt-out should be handled using the API call below.</p>
+<h2 id="Opt-In">Opt-In</h2>
+<p>Opt-in numbers to enable the receiving of business messages via WhatsApp.</p>
+<p class="opration">
+  <span class="destinationMethod post">post</span>
+  <span>
+      /provision/optin/
+  </span>
+</p>
+<h3>Authorizations</h3>
+<p>Authorizations is required via <a href="#BearerAuth">BearerAuth</a></p>
+<h3>Opt-In request Parameters</h3>
+<p><code>all data must be sent using Json format</code></p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numbers</td>
+<td>number or numbers for users who is going to receive messages from the enterprise.</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h3>Opt-In Response Parameters</h3>
+<p><code>all results return with Json format</code></p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Parameters</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>the opration type</td>
+</tr>
+<tr>
+<td>statuses</td>
+<td>Array of object</td>
+<td>the opration results</td>
+</tr>
+</tbody>
+</table>
+<p><code>the statuses object variables are show in below table</code></p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>the status of the opration which can be success or failed</td>
+</tr>
+<tr>
+<td>state</td>
+<td>the number status which can be enable or disable</td>
+</tr>
+</tbody>
+</table>
+<div class="inline-button">
+    <a data-targit="Opt-In" href="#" class="clearmargin btn-method-select btn right">
+        <span class="left title"><span class="arrow-left"></span>Show Opt-In</span>
+        <span class="right icon icon-gear"></span>
+    </a>
+</div>
+<p><br></p>
+<div id="Opt-In" class="InlineSample">
+    <div data-targit="" class="CodeSections">
+        <div class="samples">
+
+            <div class="container ">
+                <ul class="tabs">
+
+                                        <li data-class="Opt-In-sample" class="tab-link  current" data-tab="Opt-In-data-CURL-tab">CURL</li>
+
+                                                        </ul>
+
+                                                                <div data-class="Opt-In-sample" class="Opt-In-data-CURL-tab tab-content  current">
+                                        <pre><code>curl -X POST \
+  https://www.brightidea.mobi/wa/v1/provision/optin \
+  -H 'Authorization: Bearer 8d18d2f9045b7145ff81***********' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "numbers": [
+        "966666666666",
+        "966666666666"
+    ]
+}'</code></pre>
+                </div>
+                                                                                                                                            </div>
+        </div>
+        <div class="responses">
+            <div class="container Opt-In">
+                <ul class="tabs">
+
+                                        <li data-class="Opt-In-response" class="tab-link  current" data-tab="Opt-In-data-200-tab">200</li>
+
+                                        <li data-class="Opt-In-response" class="tab-link " data-tab="Opt-In-data-400-tab">400</li>
+
+                                        <li data-class="Opt-In-response" class="tab-link " data-tab="Opt-In-data-401-tab">401</li>
+                                                                            </ul>
+
+                                                                                                <div data-class="Opt-In-response" class="Opt-In-data-200-tab tab-content  current">
+                                        <pre><code>{
+    "type": "Opt-In",
+    "statuses": [
+        {
+            "status": "success",
+            "state": "enable"
+        }
+    ]
+}</code></pre>
+                </div>
+                                                                <div data-class="Opt-In-response" class="Opt-In-data-400-tab tab-content ">
+                                        <pre><code>//Error on Empty number 
+{
+    "message": "Validation Failed",
+    "reason": "Field [numbers]: must not be empty"
+}
+
+//Error on invalid number 
+{
+    "message": "Validation Failed",
+    "reason":  "965577.523233 is not a valid msisdn"
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Opt-In-response" class="Opt-In-data-401-tab tab-content ">
+                                        <pre><code>{
+    "message": "401",
+    "reason": "No such bot/bearer combination"
+}</code></pre>
+                </div>
+                                            </div>
+        </div>
+
+    </div>
+</div>
+<h2 id="Opt-Out">Opt-Out</h2>
+<p>Opt-in numbers to enable the receiving of business messages via WhatsApp.</p>
+<p class="opration">
+  <span class="destinationMethod post">post</span>
+  <span>
+      /provision/optout/
+  </span>
+</p>
+<h3>Authorizations</h3>
+<p>Authorizations is required via <a href="#BearerAuth">BearerAuth</a></p>
+<h3>Opt-Out request Parameters</h3>
+<p><code>all data must be sent using Json format</code></p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numbers</td>
+<td>number or numbers for users who is receiving the messages from the enterprise.</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h3>Opt-Out Response Parameters</h3>
+<p><code>all results return with Json format</code></p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Parameters</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>the opration type</td>
+</tr>
+<tr>
+<td>statuses</td>
+<td>Array of object</td>
+<td>the opration results</td>
+</tr>
+</tbody>
+</table>
+<p><code>the statuses object variables are show in below table</code></p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>the status of the opration which can be success or failed</td>
+</tr>
+<tr>
+<td>state</td>
+<td>the number status which can be enable or disable</td>
+</tr>
+</tbody>
+</table>
+<div class="inline-button">
+    <a data-targit="Opt-Out" href="#" class="clearmargin btn-method-select btn right">
+        <span class="left title"><span class="arrow-left"></span>Show Opt-Out</span>
+        <span class="right icon icon-gear"></span>
+    </a>
+</div>
+<p><br></p>
+<div id="Opt-Out" class="InlineSample">
+    <div data-targit="" class="CodeSections">
+        <div class="samples">
+
+            <div class="container ">
+                <ul class="tabs">
+
+                                        <li data-class="Opt-Out-sample" class="tab-link  current" data-tab="Opt-Out-data-CURL-tab">CURL</li>
+
+                                                        </ul>
+
+                                                                <div data-class="Opt-Out-sample" class="Opt-Out-data-CURL-tab tab-content  current">
+                                        <pre><code>curl -X POST \
+  https://www.www.brightidea.mobi/wa/v1/provision/optout \
+  -H 'Authorization: Bearer 8d18d2f9045b7145ff81***********' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "numbers": [
+        "966666666666",
+        "966666666666"
+    ]
+}'</code></pre>
+                </div>
+                                                                                                                                            </div>
+        </div>
+        <div class="responses">
+            <div class="container Opt-Out">
+                <ul class="tabs">
+
+                                        <li data-class="Opt-Out-response" class="tab-link  current" data-tab="Opt-Out-data-200-tab">200</li>
+
+                                        <li data-class="Opt-Out-response" class="tab-link " data-tab="Opt-Out-data-400-tab">400</li>
+
+                                        <li data-class="Opt-Out-response" class="tab-link " data-tab="Opt-Out-data-401-tab">401</li>
+                                                                            </ul>
+
+                                                                                                <div data-class="Opt-Out-response" class="Opt-Out-data-200-tab tab-content  current">
+                                        <pre><code>{
+    "type": "Opt-Out",
+    "statuses": [
+        {
+            "status": "success",
+            "state": "disable"
+        }
+    ]
+}</code></pre>
+                </div>
+                                                                <div data-class="Opt-Out-response" class="Opt-Out-data-400-tab tab-content ">
+                                        <pre><code>//Error on Empty number 
+{
+    "message": "Validation Failed",
+    "reason": "Field [numbers]: must not be empty"
+}
+
+//Error on invalid number 
+{
+    "message": "Validation Failed",
+    "reason":  "965577.523233 is not a valid msisdn"
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Opt-Out-response" class="Opt-Out-data-401-tab tab-content ">
+                                        <pre><code>{
+    "message": "401",
+    "reason": "No such bot/bearer combination"
+}</code></pre>
+                </div>
+                                            </div>
+        </div>
+
+    </div>
+</div>
+<h1 style="display: none;" id="Message">Message</h1>
+<p>The message endpoint is used as the primary endpoint of the API and this is where all the messages are sent through.</p>
+<p class="opration">
+  <span class="destinationMethod post">post</span>
+  <span>
+      /messages/
+  </span>
+</p>
+<div class="alert alert-primary" role="alert">
+    <i class="fas fa-exclamation-circle"></i><span>all data should be sent using JSON format</span>
+</div>
+<h2 id="Authorizations">Authorizations</h2>
+<p>Authorizations is required via <a href="#BearerAuth">BearerAuth</a></p>
+<h2 id="WhatsApp-Message-flow">WhatsApp Message flow</h2>
+<p><img src="../assets/pics/2.jpg" alt="WhatsApp message flow" /></p>
+<ol>
+<li>Customer opt-in is essential before sending any messages.</li>
+<li>Businesses can only start a conversation with a defined message template.</li>
+<li>Once you get a reply from your customer, a customer care session starts. You can then send “session” rich content messages for 24 hours.</li>
+<li>Every time a customer replies to one of your messages, a new 24-hour cycle starts.</li>
+<li>If a “session” expires, you’ll need to re-initiate a conversation, starting with a defined message template again.</li>
+<li>Customers can start a rich content conversation with a business at any time this opens up a new 24-hour session.</li>
+</ol>
+<h2 id="Supported-Content-Types">Supported Content-Types</h2>
+<p>brightidea WhatsApp API supports several media types. In the table below you can find what content-types are supported by the API.</p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Message type</th>
+<th>Supported Content-Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Image</td>
+<td>image/jpeg, image/png</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>video/mp4</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>pdf, msword , vnd.ms-powerpoint , vnd.ms-excel ,text/plain</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>AAC, M4A, AMR, MP3, OGG, OPUS.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Send-a-WhatsApp-Message">Send a WhatsApp Message</h2>
+<p>Message API is use to send Messages to all numbers are pre opt-in only </p>
+<p>when sending message , you should initiat the conversation with template type message , and you can spicify which template by using one of pre define templates.</p>
+<p>other than this you are free to use the free form messages if the end user reply to your Template message or send you a message.</p>
+<p>also you may want to specify the conversation time to live in queue waiting for receptors to receive the message using the parameter ttl (Time To Live) default time is 7 days, after that message will be deleted from the queue and fail error will be return.</p>
+<h3>Message request Parameters</h3>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to</td>
+<td>Array of phone numbers (msisdns)</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Message Type as Object</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Messages-Types">Messages Types</h2>
+<div class="inline-button">
+    <a data-targit="Messages" href="#" class="clearmargin btn-method-select btn right">
+        <span class="left title"><span class="arrow-left"></span>Show Messages</span>
+        <span class="right icon icon-gear"></span>
+    </a>
+</div>
+<p><br></p>
+<div id="Messages" class="InlineSample">
+    <div data-targit="" class="CodeSections">
+        <div class="samples">
+
+            <div class="container ">
+                <ul class="tabs">
+
+                                        <li data-class="Messages-sample" class="tab-link  current" data-tab="Messages-data-Template-tab">Template</li>
+
+                                        <li data-class="Messages-sample" class="tab-link " data-tab="Messages-data-Text-tab">Text</li>
+
+                                        <li data-class="Messages-sample" class="tab-link " data-tab="Messages-data-Image-tab">Image</li>
+
+                                        <li data-class="Messages-sample" class="tab-link " data-tab="Messages-data-Video-tab">Video</li>
+
+                                        <li data-class="Messages-sample" class="tab-link " data-tab="Messages-data-Document-tab">Document</li>
+
+                                        <li data-class="Messages-sample" class="tab-link " data-tab="Messages-data-Audio-tab">Audio</li>
+
+                                        <li data-class="Messages-sample" class="tab-link " data-tab="Messages-data-Location-tab">Location</li>
+
+                                        <li data-class="Messages-sample" class="tab-link " data-tab="Messages-data-Contact-tab">Contact</li>
+
+                                                        </ul>
+
+                                                                <div data-class="Messages-sample" class="Messages-data-Template-tab tab-content  current">
+                                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "template",
+    "template_name": "template_name",
+    "params": ["77584"],
+    "ttl": "P1D"
+  }
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-sample" class="Messages-data-Text-tab tab-content ">
+                                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "text",
+    "text": "Greetings from Mobily.ws"
+  }
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-sample" class="Messages-data-Image-tab tab-content ">
+                                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "image",
+    "url": "https://www.site.com/path/image.png",
+    "caption": "Image Caption"
+  }
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-sample" class="Messages-data-Video-tab tab-content ">
+                                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "video",
+    "url": "https://www.site.com/path/video.mp4",
+    "caption": "Video Caption"
+  }
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-sample" class="Messages-data-Document-tab tab-content ">
+                                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "document",
+    "url": "https://www.site.com/path/document.pdf",
+    "caption": "Document Caption",
+    "filename": "document.pdf"
+  }
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-sample" class="Messages-data-Audio-tab tab-content ">
+                                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": " audio",
+    "url": "https://www.site.com/path/audio.mp3"
+  }
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-sample" class="Messages-data-Location-tab tab-content ">
+                                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "location",
+    "lat": "55.7047",
+    "lng": "13.7047",
+    "name": "names",
+    "address": "address details"
+      } 
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-sample" class="Messages-data-Contact-tab tab-content ">
+                                        <pre><code>{
+  "to": ["966666666666"],
+  "message": {
+    "type": "contacts",
+    "contacts": [
+      {
+        "addresses": [
+          {
+            "city": "Menlo Park",
+            "country": "United States",
+            "country_code": "us",
+            "state": "CA",
+            "street": "1 Hacker Way",
+            "type": "HOME",
+            "zip": "94025"
+          }
+        ],
+        "birthday": "2012-08-18",
+        "emails": [
+          {
+            "email": "test@fb.com",
+            "type": "WORK"
+          }
+        ],
+        "name": {
+          "first_name": "John",
+          "formatted_name": "John Smith",
+          "last_name": "Smith"
+        },
+        "org": {
+          "company": "WhatsApp",
+          "department": "Design",
+          "title": "Manager"
+        },
+        "phones": [
+          {
+            "phone": "+1 (654) 555-5555",
+            "type": "WORK",
+            "wa_id": "142055515444"
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://www.facebook.com",
+            "type": "WORK"
+          }
+       ]
+       }
+    ]
+}
+}
+</code></pre>
+                </div>
+                                                                                                                                                                            </div>
+        </div>
+        <div class="responses">
+            <div class="container Messages">
+                <ul class="tabs">
+
+                                        <li data-class="Messages-response" class="tab-link  current" data-tab="Messages-data-200-tab">200</li>
+
+                                        <li data-class="Messages-response" class="tab-link " data-tab="Messages-data-400-tab">400</li>
+
+                                        <li data-class="Messages-response" class="tab-link " data-tab="Messages-data-401-tab">401</li>
+
+                                        <li data-class="Messages-response" class="tab-link " data-tab="Messages-data-402-tab">402</li>
+                                                                            </ul>
+
+                                                                                                                                                                                                                                                                                                                                <div data-class="Messages-response" class="Messages-data-200-tab tab-content  current">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "statuses": [
+      {
+          "message_id": "a33538ff-e1c8-4916-a55b-7e9f7a8c0eb0",
+          "recipient": "+966666666666",
+          "status": "success",
+          "state": "queued"
+      }
+  ]
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-response" class="Messages-data-400-tab tab-content ">
+                                        <pre><code>//Empty Numbers or Text Message is empty or message type is incorrect
+{
+  "message": "Validation Failed",
+  "reason":  "Field [numbers]: must not be empty"
+}
+//increct MSID format
+{
+  "message": "Validation Failed",
+  "reason":  "965577.523233 is not a valid msisdn"
+}
+
+//exceed the max number of numbers [20 at most per request]
+{
+  "message": "400",
+  "reason":  "the max Array of phone numbers is 20"
+}
+
+//message type is ncorrect
+{
+  "message": "Required request body is missing: public org.springframework.http.ResponseEntity&lt;?&gt; ws.mobily.whatsappapi.rest.services.NorthEndpoint.postMessage(ws.mobily.whatsappapi.domain.bot.Bot,ws.mobily.whatsappapi.domain.message.north.MobilyWhatsAppMessage)",
+  "reason":  ""
+}
+
+//emprt message content
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.text]: must not be empty"
+}
+
+// Link is empty
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.url]: must not be empty"
+}
+
+//lat location is empty
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.lat]: Parameter '{parameterPath}' must be provided."
+}
+
+//lng location is empty
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.lng]: Parameter '{parameterPath}' must be provided."
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-response" class="Messages-data-401-tab tab-content ">
+                                        <pre><code>{
+  "message": "401",
+  "reason":  "No such bot/bearer combination"
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Messages-response" class="Messages-data-402-tab tab-content ">
+                                        <pre><code>
+//balance is not enough
+{
+  "message": "402",
+  "reason":  "Your balance is not enough"
+}
+
+//subscription expired
+{
+  "message": "402",
+  "reason":  "subscription expired"
+}
+</code></pre>
+                </div>
+                                            </div>
+        </div>
+
+    </div>
+</div>
+<h2 id="Call-Back">Call Back</h2>
+<div class="alert alert-primary" role="alert">
+        <i class="fas fa-exclamation-circle"></i>
+        <strong>Call back use</strong><br>
+        <p>
+            </p><ol>
+                </ol><ul>
+<li>recive message form brightidea</li>
+<li>send message form brightidea</li>
+<li>recive message form recipters</li>
+<li>read message from recipters</li>
+</ul>
+
+</div>
+<pre><code>{
+  "type": "whatsapp",
+  "statuses": [
+      {
+          "message_id": "message_id",
+          "recipient": "recipient",
+          "status": "status",
+          "state": "status" 
+          // dispatched, sent, delivered, read
+      }
+  ]
+}
+</code></pre>
+<h3>Message States</h3>
+<p><code>The message states below are status updates on sent messages.</code></p>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>message</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QUEUED</td>
+<td>Message has been queued by brightidea WhatsApp API</td>
+</tr>
+<tr>
+<td>DISPATCHED</td>
+<td>Message has been dispatched by brightidea WhatsApp API to WhatsApp</td>
+</tr>
+<tr>
+<td>SENT</td>
+<td>Message has been sent by WhatsApp to end-user</td>
+</tr>
+<tr>
+<td>DELIVERED</td>
+<td>Message has been delivered to end-user by WhatsApp</td>
+</tr>
+<tr>
+<td>READ</td>
+<td>The message has been read by the end-user in the WhatsApp application</td>
+</tr>
+<tr>
+<td>DELETED</td>
+<td>The message has been deleted in the application, e.g. templates expiring or when the end-user manually deletes a message</td>
+</tr>
+<tr>
+<td>NO_CAPABILITY</td>
+<td>Sent message has been rejected by the brightidea API as the recipient lacks WhatsApp capability</td>
+</tr>
+<tr>
+<td>NO_OPT_IN</td>
+<td>Message rejected by brightidea API as recipient is not registered to have opted in to receive business messages on WhatsApp from the sending bot</td>
+</tr>
+<tr>
+<td>FAILED</td>
+<td>Fail status, e.g. trying to send a non-template message outside of the 24 hour customer care window will return this error</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Notification">Notification</h2>
+<p><code>Notification messages can be of one of the following Text, Location, Contacts or Media.</code></p>
+<div class="inline-button">
+    <a data-targit="Notification" href="#" class="clearmargin btn-method-select btn right">
+        <span class="left title"><span class="arrow-left"></span>Show Notification</span>
+        <span class="right icon icon-gear"></span>
+    </a>
+</div>
+<p><br></p>
+<div id="Notification" class="InlineSample">
+    <div data-targit="" class="CodeSections">
+        <div class="samples">
+
+            <div class="container ">
+                <ul class="tabs">
+
+                                        <li data-class="Notification-sample" class="tab-link  current" data-tab="Notification-data-Text-tab">Text</li>
+
+                                        <li data-class="Notification-sample" class="tab-link " data-tab="Notification-data-Image-tab">Image</li>
+
+                                        <li data-class="Notification-sample" class="tab-link " data-tab="Notification-data-Video-tab">Video</li>
+
+                                        <li data-class="Notification-sample" class="tab-link " data-tab="Notification-data-Document-tab">Document</li>
+
+                                        <li data-class="Notification-sample" class="tab-link " data-tab="Notification-data-Audio-tab">Audio</li>
+
+                                        <li data-class="Notification-sample" class="tab-link " data-tab="Notification-data-Location-tab">Location</li>
+
+                                        <li data-class="Notification-sample" class="tab-link " data-tab="Notification-data-Contact-tab">Contact</li>
+
+                                                        </ul>
+
+                                                                <div data-class="Notification-sample" class="Notification-data-Text-tab tab-content  current">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "text",
+        "body": "hello"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Notification-sample" class="Notification-data-Image-tab tab-content ">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "image",
+        "url": "https://site.com/image.png",
+        "caption": "Image captain",
+        "filename":"image.png",
+        "mime_type": "image/jpeg"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Notification-sample" class="Notification-data-Video-tab tab-content ">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "video",
+        "url": "https://site.com/video.mp4",
+        "caption": "Video captain",
+        "filename":"video.mp4",
+        "mime_type": " video/mp4"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Notification-sample" class="Notification-data-Document-tab tab-content ">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "document",
+        "url": "https://site.com/document.pdf",
+        "caption": "Document captain",
+        "filename":"document.pdf",
+        "mime_type": "application/pdf"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Notification-sample" class="Notification-data-Audio-tab tab-content ">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "audio",
+        "url": "https://site.com/audio.mpeg",
+        "caption": "Document captain",
+        "filename":"audio.pdf",
+        "mime_type": "audio/mpeg"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Notification-sample" class="Notification-data-Location-tab tab-content ">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "location",
+"latitude": 31.919209,
+        "longitude": 35.893356
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+                </div>
+                                                                <div data-class="Notification-sample" class="Notification-data-Contact-tab tab-content ">
+                                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "contacts",
+        "contacts": [
+{
+            "phoneNumbers": ["966666666666"],
+            "name": "john smith"
+          }
+        ]
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+                </div>
+                                                                            </div>
+        </div>
+        <div class="responses">
+            <div class="container Notification">
+                <ul class="tabs">
+
+                                        <li data-class="Notification-response" class="tab-link  current" data-tab="Notification-data-200-tab">200</li>
+                                                                            </ul>
+
+                                                                                                                                                                                                                                                                                                <div data-class="Notification-response" class="Notification-data-200-tab tab-content  current">
+                                        <pre><code></code></pre>
+                </div>
+                                            </div>
+        </div>
+
+    </div>
+</div>
+                        
+                         <!--Artical Ends here-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+        
+                <div id="" class="CodeBar SideNav">
+
+                                                                        <div data-targit="Opt-In" class="CodeSections" >
+                <div class="methods">
+                    <button ID="methods" type="button" data-toggle="collapse" data-target="#-methods"
+  aria-expanded="false" aria-controls="collapseExample" class="clearOutline">
+  <i class="fas fa-angle-down"></i>
+</button>
+<div class="collapse" id="-methods">
+  <div class="card card-body">
+    <ul class="list-unstyled">
+      
+    </ul>
+
+  </div>
+</div>
+
+                </div>
+                <div class="samples">
+
+                    <div class="container Opt-In">
+    <ul class="tabs">
+                        
+
+                    <li data-class="Opt-In-sample" class="tab-link  current" data-tab="data-CURL-tab">CURL</li>
+                                    
+
+                        
+
+                        
+
+                    </ul>
+
+
+                    <div data-class="Opt-In-sample" class="data-CURL-tab tab-content  current">
+                        <pre><code>curl -X POST \
+  https://www.brightidea.mobi/wa/v1/provision/optin \
+  -H 'Authorization: Bearer 8d18d2f9045b7145ff81***********' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "numbers": [
+        "966666666666",
+        "966666666666"
+    ]
+}'</code></pre>
+        </div>
+                                </div>                </div>
+                <div class="responses">
+                    <div class="container Opt-In">
+    <ul class="tabs">
+                
+                
+                    <li data-class="Opt-In-response" class="tab-link  current" data-tab="data-200-tab">200</li>
+                            
+                    <li data-class="Opt-In-response" class="tab-link " data-tab="data-400-tab">400</li>
+                            
+                    <li data-class="Opt-In-response" class="tab-link " data-tab="data-401-tab">401</li>
+                                </ul>
+
+                            <div data-class="Opt-In-response" class="data-200-tab tab-content  current">
+                        <pre><code>{
+    "type": "Opt-In",
+    "statuses": [
+        {
+            "status": "success",
+            "state": "enable"
+        }
+    ]
+}</code></pre>
+        </div>
+                    <div data-class="Opt-In-response" class="data-400-tab tab-content ">
+                        <pre><code>//Error on Empty number 
+{
+    "message": "Validation Failed",
+    "reason": "Field [numbers]: must not be empty"
+}
+
+//Error on invalid number 
+{
+    "message": "Validation Failed",
+    "reason":  "965577.523233 is not a valid msisdn"
+}
+</code></pre>
+        </div>
+                    <div data-class="Opt-In-response" class="data-401-tab tab-content ">
+                        <pre><code>{
+    "message": "401",
+    "reason": "No such bot/bearer combination"
+}</code></pre>
+        </div>
+        </div>                </div>
+
+            </div>
+                                                                        <div data-targit="Opt-Out" class="CodeSections" style="display: none;">
+                <div class="methods">
+                    <button ID="methods" type="button" data-toggle="collapse" data-target="#-methods"
+  aria-expanded="false" aria-controls="collapseExample" class="clearOutline">
+  <i class="fas fa-angle-down"></i>
+</button>
+<div class="collapse" id="-methods">
+  <div class="card card-body">
+    <ul class="list-unstyled">
+      
+    </ul>
+
+  </div>
+</div>
+
+                </div>
+                <div class="samples">
+
+                    <div class="container Opt-Out">
+    <ul class="tabs">
+                        
+
+                    <li data-class="Opt-Out-sample" class="tab-link  current" data-tab="data-CURL-tab">CURL</li>
+                                    
+
+                        
+
+                        
+
+                    </ul>
+
+
+                    <div data-class="Opt-Out-sample" class="data-CURL-tab tab-content  current">
+                        <pre><code>curl -X POST \
+  https://www.www.brightidea.mobi/wa/v1/provision/optout \
+  -H 'Authorization: Bearer 8d18d2f9045b7145ff81***********' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "numbers": [
+        "966666666666",
+        "966666666666"
+    ]
+}'</code></pre>
+        </div>
+                                </div>                </div>
+                <div class="responses">
+                    <div class="container Opt-Out">
+    <ul class="tabs">
+                
+                
+                    <li data-class="Opt-Out-response" class="tab-link  current" data-tab="data-200-tab">200</li>
+                            
+                    <li data-class="Opt-Out-response" class="tab-link " data-tab="data-400-tab">400</li>
+                            
+                    <li data-class="Opt-Out-response" class="tab-link " data-tab="data-401-tab">401</li>
+                                </ul>
+
+                            <div data-class="Opt-Out-response" class="data-200-tab tab-content  current">
+                        <pre><code>{
+    "type": "Opt-Out",
+    "statuses": [
+        {
+            "status": "success",
+            "state": "disable"
+        }
+    ]
+}</code></pre>
+        </div>
+                    <div data-class="Opt-Out-response" class="data-400-tab tab-content ">
+                        <pre><code>//Error on Empty number 
+{
+    "message": "Validation Failed",
+    "reason": "Field [numbers]: must not be empty"
+}
+
+//Error on invalid number 
+{
+    "message": "Validation Failed",
+    "reason":  "965577.523233 is not a valid msisdn"
+}
+</code></pre>
+        </div>
+                    <div data-class="Opt-Out-response" class="data-401-tab tab-content ">
+                        <pre><code>{
+    "message": "401",
+    "reason": "No such bot/bearer combination"
+}</code></pre>
+        </div>
+        </div>                </div>
+
+            </div>
+                                                                        <div data-targit="Messages" class="CodeSections" style="display: none;">
+                <div class="methods">
+                    <button ID="methods" type="button" data-toggle="collapse" data-target="#-methods"
+  aria-expanded="false" aria-controls="collapseExample" class="clearOutline">
+  <i class="fas fa-angle-down"></i>
+</button>
+<div class="collapse" id="-methods">
+  <div class="card card-body">
+    <ul class="list-unstyled">
+      
+    </ul>
+
+  </div>
+</div>
+
+                </div>
+                <div class="samples">
+
+                    <div class="container Messages">
+    <ul class="tabs">
+                        
+
+                    <li data-class="Messages-sample" class="tab-link  current" data-tab="data-Template-tab">Template</li>
+                                    
+
+                    <li data-class="Messages-sample" class="tab-link " data-tab="data-Text-tab">Text</li>
+                                    
+
+                    <li data-class="Messages-sample" class="tab-link " data-tab="data-Image-tab">Image</li>
+                                    
+
+                    <li data-class="Messages-sample" class="tab-link " data-tab="data-Video-tab">Video</li>
+                                    
+
+                    <li data-class="Messages-sample" class="tab-link " data-tab="data-Document-tab">Document</li>
+                                    
+
+                    <li data-class="Messages-sample" class="tab-link " data-tab="data-Audio-tab">Audio</li>
+                                    
+
+                    <li data-class="Messages-sample" class="tab-link " data-tab="data-Location-tab">Location</li>
+                                    
+
+                    <li data-class="Messages-sample" class="tab-link " data-tab="data-Contact-tab">Contact</li>
+                                    
+
+                        
+
+                        
+
+                        
+
+                    </ul>
+
+
+                    <div data-class="Messages-sample" class="data-Template-tab tab-content  current">
+                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "template",
+    "template_name": "template_name",
+    "params": ["77584"],
+    "ttl": "P1D"
+  }
+</code></pre>
+        </div>
+                    <div data-class="Messages-sample" class="data-Text-tab tab-content ">
+                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "text",
+    "text": "Greetings from Mobily.ws"
+  }
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-sample" class="data-Image-tab tab-content ">
+                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "image",
+    "url": "https://www.site.com/path/image.png",
+    "caption": "Image Caption"
+  }
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-sample" class="data-Video-tab tab-content ">
+                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "video",
+    "url": "https://www.site.com/path/video.mp4",
+    "caption": "Video Caption"
+  }
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-sample" class="data-Document-tab tab-content ">
+                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "document",
+    "url": "https://www.site.com/path/document.pdf",
+    "caption": "Document Caption",
+    "filename": "document.pdf"
+  }
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-sample" class="data-Audio-tab tab-content ">
+                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": " audio",
+    "url": "https://www.site.com/path/audio.mp3"
+  }
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-sample" class="data-Location-tab tab-content ">
+                        <pre><code>{
+  "to": ["966666666666","966666666666"],
+  "message": {
+    "type": "location",
+    "lat": "55.7047",
+    "lng": "13.7047",
+    "name": "names",
+    "address": "address details"
+      } 
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-sample" class="data-Contact-tab tab-content ">
+                        <pre><code>{
+  "to": ["966666666666"],
+  "message": {
+    "type": "contacts",
+    "contacts": [
+      {
+        "addresses": [
+          {
+            "city": "Menlo Park",
+            "country": "United States",
+            "country_code": "us",
+            "state": "CA",
+            "street": "1 Hacker Way",
+            "type": "HOME",
+            "zip": "94025"
+          }
+        ],
+        "birthday": "2012-08-18",
+        "emails": [
+          {
+            "email": "test@fb.com",
+            "type": "WORK"
+          }
+        ],
+        "name": {
+          "first_name": "John",
+          "formatted_name": "John Smith",
+          "last_name": "Smith"
+        },
+        "org": {
+          "company": "WhatsApp",
+          "department": "Design",
+          "title": "Manager"
+        },
+        "phones": [
+          {
+            "phone": "+1 (654) 555-5555",
+            "type": "WORK",
+            "wa_id": "142055515444"
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://www.facebook.com",
+            "type": "WORK"
+          }
+       ]
+       }
+    ]
+}
+}
+</code></pre>
+        </div>
+                                        </div>                </div>
+                <div class="responses">
+                    <div class="container Messages">
+    <ul class="tabs">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <li data-class="Messages-response" class="tab-link  current" data-tab="data-200-tab">200</li>
+                            
+                    <li data-class="Messages-response" class="tab-link " data-tab="data-400-tab">400</li>
+                            
+                    <li data-class="Messages-response" class="tab-link " data-tab="data-401-tab">401</li>
+                            
+                    <li data-class="Messages-response" class="tab-link " data-tab="data-402-tab">402</li>
+                                </ul>
+
+                                                                                    <div data-class="Messages-response" class="data-200-tab tab-content  current">
+                        <pre><code>{
+  "type": "whatsapp",
+  "statuses": [
+      {
+          "message_id": "a33538ff-e1c8-4916-a55b-7e9f7a8c0eb0",
+          "recipient": "+966666666666",
+          "status": "success",
+          "state": "queued"
+      }
+  ]
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-response" class="data-400-tab tab-content ">
+                        <pre><code>//Empty Numbers or Text Message is empty or message type is incorrect
+{
+  "message": "Validation Failed",
+  "reason":  "Field [numbers]: must not be empty"
+}
+//increct MSID format
+{
+  "message": "Validation Failed",
+  "reason":  "965577.523233 is not a valid msisdn"
+}
+
+//exceed the max number of numbers [20 at most per request]
+{
+  "message": "400",
+  "reason":  "the max Array of phone numbers is 20"
+}
+
+//message type is ncorrect
+{
+  "message": "Required request body is missing: public org.springframework.http.ResponseEntity&lt;?&gt; ws.mobily.whatsappapi.rest.services.NorthEndpoint.postMessage(ws.mobily.whatsappapi.domain.bot.Bot,ws.mobily.whatsappapi.domain.message.north.MobilyWhatsAppMessage)",
+  "reason":  ""
+}
+
+//emprt message content
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.text]: must not be empty"
+}
+
+// Link is empty
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.url]: must not be empty"
+}
+
+//lat location is empty
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.lat]: Parameter '{parameterPath}' must be provided."
+}
+
+//lng location is empty
+{
+  "message": "Validation Failed",
+  "reason":  "Field [message.lng]: Parameter '{parameterPath}' must be provided."
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-response" class="data-401-tab tab-content ">
+                        <pre><code>{
+  "message": "401",
+  "reason":  "No such bot/bearer combination"
+}
+</code></pre>
+        </div>
+                    <div data-class="Messages-response" class="data-402-tab tab-content ">
+                        <pre><code>
+//balance is not enough
+{
+  "message": "402",
+  "reason":  "Your balance is not enough"
+}
+
+//subscription expired
+{
+  "message": "402",
+  "reason":  "subscription expired"
+}
+</code></pre>
+        </div>
+        </div>                </div>
+
+            </div>
+                                                                        <div data-targit="Notification" class="CodeSections" style="display: none;">
+                <div class="methods">
+                    <button ID="methods" type="button" data-toggle="collapse" data-target="#-methods"
+  aria-expanded="false" aria-controls="collapseExample" class="clearOutline">
+  <i class="fas fa-angle-down"></i>
+</button>
+<div class="collapse" id="-methods">
+  <div class="card card-body">
+    <ul class="list-unstyled">
+      
+    </ul>
+
+  </div>
+</div>
+
+                </div>
+                <div class="samples">
+
+                    <div class="container Notification">
+    <ul class="tabs">
+                        
+
+                    <li data-class="Notification-sample" class="tab-link  current" data-tab="data-Text-tab">Text</li>
+                                    
+
+                    <li data-class="Notification-sample" class="tab-link " data-tab="data-Image-tab">Image</li>
+                                    
+
+                    <li data-class="Notification-sample" class="tab-link " data-tab="data-Video-tab">Video</li>
+                                    
+
+                    <li data-class="Notification-sample" class="tab-link " data-tab="data-Document-tab">Document</li>
+                                    
+
+                    <li data-class="Notification-sample" class="tab-link " data-tab="data-Audio-tab">Audio</li>
+                                    
+
+                    <li data-class="Notification-sample" class="tab-link " data-tab="data-Location-tab">Location</li>
+                                    
+
+                    <li data-class="Notification-sample" class="tab-link " data-tab="data-Contact-tab">Contact</li>
+                                    
+
+                    </ul>
+
+
+                    <div data-class="Notification-sample" class="data-Text-tab tab-content  current">
+                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "text",
+        "body": "hello"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+        </div>
+                    <div data-class="Notification-sample" class="data-Image-tab tab-content ">
+                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "image",
+        "url": "https://site.com/image.png",
+        "caption": "Image captain",
+        "filename":"image.png",
+        "mime_type": "image/jpeg"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+        </div>
+                    <div data-class="Notification-sample" class="data-Video-tab tab-content ">
+                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "video",
+        "url": "https://site.com/video.mp4",
+        "caption": "Video captain",
+        "filename":"video.mp4",
+        "mime_type": " video/mp4"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+        </div>
+                    <div data-class="Notification-sample" class="data-Document-tab tab-content ">
+                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "document",
+        "url": "https://site.com/document.pdf",
+        "caption": "Document captain",
+        "filename":"document.pdf",
+        "mime_type": "application/pdf"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+        </div>
+                    <div data-class="Notification-sample" class="data-Audio-tab tab-content ">
+                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "audio",
+        "url": "https://site.com/audio.mpeg",
+        "caption": "Document captain",
+        "filename":"audio.pdf",
+        "mime_type": "audio/mpeg"
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+        </div>
+                    <div data-class="Notification-sample" class="data-Location-tab tab-content ">
+                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "location",
+"latitude": 31.919209,
+        "longitude": 35.893356
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+        </div>
+                    <div data-class="Notification-sample" class="data-Contact-tab tab-content ">
+                        <pre><code>{
+  "type": "whatsapp",
+  "notifications": [ {
+      "from": "966666666666",
+      "message_id": "ABEGlid4WEQkAhDV7wnjg8YrPJH04-JlBJRb",
+      "message": {
+        "type": "contacts",
+        "contacts": [
+{
+            "phoneNumbers": ["966666666666"],
+            "name": "john smith"
+          }
+        ]
+      },
+      "to": "bright idea"
+    } ]
+}
+</code></pre>
+        </div>
+                </div>                </div>
+                <div class="responses">
+                    <div class="container Notification">
+    <ul class="tabs">
+                
+                
+                
+                
+                
+                
+                
+                
+                    <li data-class="Notification-response" class="tab-link  current" data-tab="data-200-tab">200</li>
+                                </ul>
+
+                                                                            <div data-class="Notification-response" class="data-200-tab tab-content  current">
+                        <pre><code></code></pre>
+        </div>
+        </div>                </div>
+
+            </div>
+            
+        </div>
+            </div>
+    <script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/end.js"></script>
+</body>
+
+</html>
